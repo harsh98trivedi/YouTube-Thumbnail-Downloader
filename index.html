@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YouTube Thumbnail Downloader</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Common Tags -->
+	<meta content='#000000' name='theme-color'/>
+	<meta name="google-site-verification" content="0yDUo8-uyoewyaf5iw2w1qXf2T0qL-hF4cMY2Ji9STI" />
+
+	<meta name="keywords" content="YouTube, YouTube Thumbnail Downloader, Thumbnail Downloader, Thumbnails, Download Thumbnails, Download YouTube Thumbails, YouTube Video Thumbnail Downloader, Youtube Thumbnail Downloader, YT, YT Thumbnail Downloader, Youtube Thumbnail Downloader HD, YouTube Thumbnail Downloader Online, Clean and Simple YouTube Thumbnail Downloader, CLean and Simple, YouTube Thumbnails, YouTube HD Thumbnail Downloader, High Definition Thumbnail Downoader, YT Thumbnail Research, Download YouTube Thumbnail, Download YouTube Thumbnails Easily, Harsh Trivedi">
+
+	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	<meta property="og:title" content="YouTube Thumbnail Downloader"/>
+	<meta property="og:description" content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you."/>
+	<meta property="og:image" content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg"/>
+	<meta property="og:url" content="https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader/"/>
+	<meta property="og:site_name" content="YouTube Thumbnail Downloader"/>
+	<meta property="og:locale" content="en_US"/>
+	<meta property="fb:admins" content="245221532650178"/>
+	<meta property="og:type" content="website"/>
+	<meta content='https://www.facebook.com/TheHarshTrivedi' property='article:author'/>
+	<meta property="og:url" content="https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader/"/>
+	<!-- Search Engine -->
+	<meta property="description" content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you."/>
+	<meta property="image" content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg"/>
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="YouTube Thumbnail Downloader"/>
+	<meta itemprop="description" content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you."/>
+	<meta itemprop="image" content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg"/>
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image"/>
+	<meta property="twitter:title" content="YouTube Thumbnail Downloader"/>
+	<meta property="twitter:description" content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you."/>
+	<meta property="twitter:creator" content="@harsh98trivedi"/>
+	<meta property="twitter:creator:id" content="@harsh98trivedi"/>
+	<meta property="twitter:image:src" content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg"/>
+	<meta property="twitter:image" content="YouTube Thumbnail Downloader | Download YouTube thumbnails with ease."/>
+    
+<link rel="stylesheet" href="css/custom-bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel='icon' type='image/x-icon' href='images/favicon.png'/>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One&amp;subset=latin-ext" rel="stylesheet">
+
+  </head>
+  <body>
+
+  
+  <div id="header" class="fixed-top">
+      <a id="headline" href="#">YOUTUBE THUMBNAIL DOWNLOADER</a><br/>
+        <!-- Social Media Icons -->
+          <a href="https://www.facebook.com/harsh98trivedi" target="_blank" id="social-media-icons">
+              <img id="social" src="images/facebook.svg" alt="Facebook"></img>
+          </a>
+          <a href="https://www.twitter.com/harsh98trivedi" target="_blank" id="social-media-icons">
+              <img id="social" src="images/twitter.svg" alt="Twitter"></img>
+          </a>
+          <a href="https://www.youtube.com/harsh98trivedi" target="_blank" id="social-media-icons">
+              <img id="social" src="images/youtube.svg" alt="YouTube"></img>
+          </a>
+          <a href="https://plus.google.com/+harsh98trivedi" target="_blank" id="social-media-icons">
+              <img id="social" src="images/googleplus.svg" alt="Google+"></img>
+          </a>
+          <a href="https://www.instagram.com/harsh98trivedi" target="_blank" id="social-media-icons">
+              <img id="social" src="images/instagram.svg" alt="Instagram"></img>
+          </a>
+          <a href="https://www.reddit.com/u/harshtrivedi" target="_blank" id="social-media-icons">
+              <img id="social" src="images/reddit.svg" alt="Reddit"></img>
+          </a>
+          <a href="https://www.github.com/harsh98trivedi" target="_blank" id="social-media-icons">
+              <img id="social" src="images/github.svg" alt="Github"></img>
+          </a>
+          <a href="mailto:harsh98trivedi@gmail.com" id="social-media-icons">
+              <img id="social" src="images/gmail.svg" alt="Email"></img>
+          </a>
+        <!-- Social Media Icons -->
+  </div>
+  
+<div class="jumbotron jumbotron-fullheight jumbo-vertical-center text-center mb-0 radius-0">
+  <div class="container">
+  <div id="result" class="hidden">
+      <!-- THUMBNAIL PREVIEW -->
+        <img id="thumbnailpreview" src="images/placeholder.gif" onerror="this.style.display='none'"/>
+        <!-- THUMBNAIL PREVIEW -->
+        <!-- INPUT AREA -->
+        <div class="input-group">
+          <input id="ytlink" autofocus type="text" class="form-control" placeholder="ENTER A YOUTUBE VIDEO URL HERE" spellcheck="false" onsubmit="youtube_thumbnail_downloader(ytlink.value);ShowMain()" autocomplete="off"/>
+        </div>
+        <button id="thumbdloadbtn" class="thumbdloadbtn" type="button" onclick="youtube_thumbnail_downloader(ytlink.value);ShowMain()">FETCH</button>
+        <!-- INPUT AREA -->
+
+        <!-- Download Buttons -->
+        <div id="download-buttons">
+                <a target="_blank" id="thumbnailhq" download><button class="btn btn-default btn-sm thumbdloadbtn text-center">HIGH QUALITY</button></a>
+                <a target="_blank" id="thumbnailmq" download><button class="btn btn-default btn-sm thumbdloadbtn text-center">MEDIUM QUALITY</button></a>
+                <a target="_blank" id="thumbnaillq" download><button class="btn btn-default btn-sm thumbdloadbtn text-center">LOW QUALITY</button></a>
+        </div>
+        <!-- Download Buttons -->
+    </div>
+      </div>
+  </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="js/jquery3.3.1.min.js"></script>
+    <script src="js/thumbnail.js"></script>
+
+    <script type="text/javascript">
+        // Replace source
+        $('img').error(function(){
+                $(this).attr('src', '#.png');
+        });
+
+        // Or, hide them
+        $("img").error(function(){
+                $(this).hide();
+        });
+        </script>
+        <script>
+        $('#ytlink').keydown(function(e){
+            var keyCode = (e.keyCode ? e.keyCode : e.which);
+            if (keyCode == 13) {
+                $('#thumbdloadbtn').trigger('click');
+            }
+        });
+        </script>
+        <script>
+        $("#preview div").hide();
+        $("#preview");
+        });
+        </script>
+
+        <script>
+        var realImage = document.getElementById('thumbnailpreview');
+        var loadingImage = document.getElementById('loadingImage');
+        loadingImage.style.display = 'inline';
+        realImage.style.display = 'none';
+
+        // Create new image
+        var imgPreloader = new Image();
+        // define onload (= image loaded)
+        imgPreloader.onload = function () {
+            realImage.src = imgPreloader.src;
+            realImage.style.display = 'inline';
+            loadingImage.style.display = 'none';
+        };
+        // set image source
+        imgPreloader.src = '';
+        </script>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70447982-2"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-70447982-2');
+		</script>
+
+  </body>
+</html>

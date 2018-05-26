@@ -38,16 +38,26 @@
 	<meta property="twitter:creator:id" content="@harsh98trivedi"/>
 	<meta property="twitter:image:src" content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg"/>
 	<meta property="twitter:image" content="YouTube Thumbnail Downloader | Download YouTube thumbnails with ease."/>
-    
+
 <link rel="stylesheet" href="css/custom-bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel='icon' type='image/x-icon' href='images/favicon.png'/>
 <link href="https://fonts.googleapis.com/css?family=Fjalla+One&amp;subset=latin-ext" rel="stylesheet">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70447982-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-70447982-2');
+</script>
+
   </head>
   <body>
 
-  
+
   <div id="header" class="fixed-top">
       <a id="headline" href="#">YOUTUBE THUMBNAIL DOWNLOADER</a><br/>
         <!-- Social Media Icons -->
@@ -77,7 +87,7 @@
           </a>
         <!-- Social Media Icons -->
   </div>
-  
+
 <div class="jumbotron jumbotron-fullheight jumbo-vertical-center text-center mb-0 radius-0">
   <div class="container">
   <div id="result" class="hidden">
@@ -93,9 +103,9 @@
 
         <!-- Download Buttons -->
         <div id="download-buttons">
-                <a target="_blank" id="thumbnailhq" download><button class="btn btn-default btn-sm thumbdloadbtn text-center">HIGH QUALITY</button></a>
-                <a target="_blank" id="thumbnailmq" download><button class="btn btn-default btn-sm thumbdloadbtn text-center">MEDIUM QUALITY</button></a>
-                <a target="_blank" id="thumbnaillq" download><button class="btn btn-default btn-sm thumbdloadbtn text-center">LOW QUALITY</button></a>
+                <a target="_blank" id="thumbnailhq" download><button class="thumbdloadbtn text-center">HIGH QUALITY</button></a>
+                <a target="_blank" id="thumbnailmq" download><button class="thumbdloadbtn text-center">MEDIUM QUALITY</button></a>
+                <a target="_blank" id="thumbnaillq" download><button class="thumbdloadbtn text-center">LOW QUALITY</button></a>
         </div>
         <!-- Download Buttons -->
     </div>
@@ -151,15 +161,5 @@
         // set image source
         imgPreloader.src = '';
         </script>
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70447982-2"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-70447982-2');
-		</script>
-
   </body>
 </html>

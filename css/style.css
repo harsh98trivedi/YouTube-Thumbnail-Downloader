@@ -2,13 +2,16 @@ body{
   color:#ffffff;
   font-family: 'Fjalla One', sans-serif;
   background: #ffffff;
-  max-height: 100%;
-  max-width: 100%;
-  overflow: scroll;
+  overflow: hidden !important;
+  background: #ffffff;
+  background: -webkit-linear-gradient(bottom, #bababa, #ffffff); /* For Safari */
+  background: -o-linear-gradient(top, #bababa, #ffffff); /* For Opera */
+  background: -moz-linear-gradient(top, #bababa, #ffffff); /* For Firefox*/
+  background: linear-gradient(to top, #bababa, #ffffff); /* Standard syntax */
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    display: none !important;
 }
 
 a,
@@ -18,24 +21,11 @@ a:hover {
   text-decoration: none;
 }
 
-#container{
-  overflow: scroll;
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  position: relative;
-  background: #ffffff;
-  background: -webkit-linear-gradient(bottom, #bababa, #ffffff); /* For Safari */
-  background: -o-linear-gradient(top, #bababa, #ffffff); /* For Opera */
-  background: -moz-linear-gradient(top, #bababa, #ffffff); /* For Firefox*/
-  background: linear-gradient(to top, #bababa, #ffffff); /* Standard syntax */
-}
 
 #header{
   padding: 0.5vmax;
   width: 100vw;
-  overflow: hidden;
+  overflow: hidden !important;
   text-align: center;
   background: #000000;
   background: -webkit-linear-gradient(left bottom, #040157, #00775A); /* For Safari */
@@ -53,7 +43,7 @@ a:hover {
 }
 
 #social{
-  max-width: 3vmax;
+  max-width: 2.5vmax;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   -moz-transition: all ease 1s;
@@ -134,7 +124,7 @@ transform: translateY(-0.3rem);
 /*BOUNCE ANIMATION FOR THE ARROW*/
 
 #thumbnailpreview{
-  border: 0.5vw solid #ffffff;
+  border: 0.25rem solid #ffffff;
   background: #000000;
   background: -webkit-linear-gradient(left bottom, #040157, #00775A); /* For Safari */
   background: -o-linear-gradient(top right, #040157, #00775A); /* For Opera */
@@ -153,18 +143,12 @@ transform: translateY(-0.3rem);
   margin-top: 10vmax;
 }
 
-#result{
-	margin-top:auto;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:auto;
-}
 
 #thumbnailpreview:hover{
   transform: scale(1.025);
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -moz-transition: all ease 0.5s;
@@ -172,19 +156,19 @@ transform: translateY(-0.3rem);
 }
 
 #ytlink{
-  width: 50vw;
+  width: auto;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 1.5vmax;
+  font-size: 1.75vmax;
   text-align: center;
   padding-left: 1.5vmax;
   padding-right: 1.5vmax;
   padding-top: 1vmax;
   padding-bottom: 1vmax;
   border: none;
-  border-radius: 5vmax;
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
+  border-radius: 10vmax;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -moz-transition: all ease 0.5s;
@@ -202,7 +186,7 @@ transform: translateY(-0.3rem);
 }
 
 #thumbdloadbtn{
-  font-size: 1.5vmax;
+  font-size: 1.75vmax;
   font-family: 'Fjalla One', sans-serif;
   margin: 1.5vmax;
   padding-left: 5vmax;
@@ -226,31 +210,25 @@ transform: translateY(-0.3rem);
 }
 
 #thumbdloadbtn:hover{
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -moz-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
 }
 
-#download-buttons{
-  margin-top: 1.5vmax;
-  margin-left: 0.5vmax;
-  margin-right: 0.5vmax;
-}
-
-
 .thumbdloadbtn{
-  font-size: 1.5vmax;
+  font-size: 1.75vmax;
   margin: 0.5vmax;
-  padding-left: 3vmax;
-  padding-right: 3vmax;
-  padding-top: 1vmax;
-  padding-bottom: 1vmax;
+  padding-left: 5vmax;
+  padding-right: 5vmax;
+  padding-top: 0.75vmax;
+  padding-bottom: 0.75vmax;
   border: none;
   border-radius: 10rem;
+  width: 25vmax;
   color: #ffffff;
   background: -webkit-linear-gradient(left bottom, #040157, #00775A); /* For Safari */
   background: -o-linear-gradient(top right, #040157, #00775A); /* For Opera */
@@ -266,16 +244,16 @@ transform: translateY(-0.3rem);
 }
 
 .thumbdloadbtn:hover{
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -moz-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 2130px) {
   #download-buttons{
     display: grid;
   }

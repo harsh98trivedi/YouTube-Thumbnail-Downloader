@@ -21,5 +21,6 @@ $(document).keypress(function(event) {if (event.which == 115 && (event.ctrlKey||
 $("#download-buttons").hide();
 $("#thumbdloadbtn").click(function(){
     $("#download-buttons").slideDown(500).fadeIn(250);
-	$("#thumbdloadbtn").hide();
+	   $("#thumbdloadbtn").hide();
+     $(".input-group").hide();
 });

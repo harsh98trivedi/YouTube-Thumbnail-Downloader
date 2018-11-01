@@ -6,5 +6,3 @@ This project was initially hosted on [**Firebase**](https://yt-thumbnail-downloa
 ---
 
 ![YouTube Thumbnail Downloader](https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg)
-
-#### Made with :heart: in India

@@ -191,7 +191,7 @@ input:active {
 #footer {
     padding: 0.5rem;
     font-weight: 500;
-    font-size: 2.5vw
+    font-size: 3vw
 }
 
 @media only screen and (max-height: 440px) {

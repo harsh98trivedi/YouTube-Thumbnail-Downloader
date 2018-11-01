@@ -80,6 +80,8 @@ input:active {
     justify-content: center;
     text-align: justify;
     padding: 0.5rem;
+    position: relative;
+    z-index: 500;
 }
 
 #header-links {
@@ -109,9 +111,9 @@ input:active {
 }
 
 #main {
-    margin-top: -2.5vmax;
+    margin: 0.5rem auto;
     display: flex;
-    min-height: 95vh;
+    min-height: 90vh;
     height: 100%;
     width: 100vw;
     align-items: center;
@@ -119,12 +121,13 @@ input:active {
 }
 
 #thumbnailpreview {
-    max-width: 25vmax;
-    border: 0.25rem solid #ffffff;
+    max-width: 75vw;
+    border: 0.25vmax solid #ffffff;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     -moz-transition: all ease 1s;
     -o-transition: all ease 1s;
+    margin: -0.5rem;
 }
 
 #thumbnailpreview:hover {
@@ -136,10 +139,10 @@ input:active {
 }
 
 #ytlink {
-    color: black;
+    color: #000000;
     text-align: center;
     padding: 1.5rem 0;
-    margin: 0.5rem;
+    margin: 0.25rem;
     border-radius: 10rem;
     font-weight: 700;
     font-size: 1rem;
@@ -186,17 +189,17 @@ input:active {
     font-weight: 500;
 }
 
-@media only screen and (min-width: 525px) {
+@media only screen and (max-width: 525px) {
     #nav {
         padding: 0.25rem;
     }
-    
+
     .thumbdloadbtn {
 
     }
 
     #main {
-        margin-top: 0.05rem;
+        margin: 0.5rem 0;
     }
 
 }

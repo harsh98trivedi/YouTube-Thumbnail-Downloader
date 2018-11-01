@@ -1,260 +1,202 @@
-body{
-  color:#ffffff;
-  font-family: 'Fjalla One', sans-serif;
-  background: #ffffff;
-  overflow: hidden !important;
-  background: #ffffff;
-  background: -webkit-linear-gradient(bottom, #bababa, #ffffff); /* For Safari */
-  background: -o-linear-gradient(top, #bababa, #ffffff); /* For Opera */
-  background: -moz-linear-gradient(top, #bababa, #ffffff); /* For Firefox*/
-  background: linear-gradient(to top, #bababa, #ffffff); /* Standard syntax */
-}
-
-::-webkit-scrollbar {
-    display: none !important;
+body {
+    font-family: 'Dosis', sans-serif;
+    background: #ffffff;
+    height: 100%;
+    width: 100vw;
+    color: #ffffff;
+    background: -webkit-linear-gradient(bottom, #bababa, #ffffff);
+    /* For Safari */
+    background: -o-linear-gradient(top, #bababa, #ffffff);
+    /* For Opera */
+    background: -moz-linear-gradient(top, #bababa, #ffffff);
+    /* For Firefox*/
+    background: linear-gradient(to top, #bababa, #ffffff);
+    /* Standard syntax */
 }
 
 a,
 a:focus,
 a:hover {
-  color: #fff;
-  text-decoration: none;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+::scrollbar {
+    display: none;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #ffffff;
+    background: #040157;
+}
+
+::selection {
+    color: white;
+    background: #040157;
+}
+
+input {
+    caret-color: #040157;
+}
+
+input:active {
+    -webkit-box-shadow: inset 0px 0px 50px 5px rgba(4, 1, 87, 0.5);
+    -moz-box-shadow: inset 0px 0px 50px 5px rgba(4, 1, 87, 0.5);
+    box-shadow: inset 0px 0px 50px 5px rgba(4, 1, 87, 0.5);
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.shadow:hover {
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+.site-gradient {
+    background: #000000;
+    background: -webkit-linear-gradient(left bottom, #040157, #00775A);
+    /* For Safari */
+    background: -o-linear-gradient(top right, #040157, #00775A);
+    /* For Opera */
+    background: -moz-linear-gradient(top right, #14131f, #00775A);
+    /* For Firefox*/
+    background: linear-gradient(to top right, #040157, #00775A);
+    /* Standard syntax */
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+#nav {
+    justify-content: center;
+    text-align: justify;
+    padding: 0.5rem;
+}
+
+#header-links {
+    text-decoration: none;
+    align-items: center;
+}
+
+#header {
+    font-size: 2.5vmax;
+    white-space: nowrap;
+    font-weight: 600;
+    margin: 0 0.25rem;
+}
+
+#social-media {
+    width: 100%;
+}
+
+#social-media-icons {
+    text-decoration: none;
+    margin: 0 -0.25rem;
+}
+
+#social {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#main {
+    margin-top: -2.5vmax;
+    display: flex;
+    min-height: 95vh;
+    height: 100%;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+#thumbnailpreview {
+    max-width: 25vmax;
+    border: 0.25rem solid #ffffff;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+}
+
+#thumbnailpreview:hover {
+    transform: scale(1.05);
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+}
+
+#ytlink {
+    color: black;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin: 0.5rem;
+    border-radius: 10rem;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 90vw;
+    border: none;
 }
 
 
-#header{
-  padding: 0.5vmax;
-  width: 100vw;
-  overflow: hidden !important;
-  text-align: center;
-  background: #000000;
-  background: -webkit-linear-gradient(left bottom, #040157, #00775A); /* For Safari */
-  background: -o-linear-gradient(top right, #040157, #00775A); /* For Opera */
-  background: -moz-linear-gradient(top right, #040157, #00775A); /* For Firefox*/
-  background: linear-gradient(to top right, #040157, #00775A); /* Standard syntax */
-  -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
-  -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
-  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.50);
+#thumbdloadbtn {
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem;
+    width: 50vw;
+    border-radius: 10rem;
+    letter-spacing: 0.25rem;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 
-#headline{
-  font-size: 3vmax;
-  font-family: 'Fjalla One', sans-serif;
+#thumbdloadbtn:active {
+    filter: brightness(1.5);
 }
 
-#social{
-  max-width: 2.5vmax;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -moz-transition: all ease 1s;
-  -o-transition: all ease 1s;
+.thumbdloadbtn {
+    color: #ffffff;
+    border: none;
+    white-space: nowrap;
+    padding: 0.75rem;
+    width: 50vw;
+    margin: 0.25rem 0;
+    text-align: center;
+    border-radius: 10rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    cursor: pointer;
 }
 
-#social:hover{
-  -moz-animation: bounce 1.5s infinite;
-  -webkit-animation: bounce 1.5s infinite;
-  animation: bounce 1.5s infinite;
-  white-space: nowrap;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  -moz-transition: all ease 1s;
-  -o-transition: all ease 1s;
- }
-
-#social-media-icons{
-  text-decoration: none;
-  margin: 0.5vw;
+.thumbdloadbtn:active {
+    filter: brightness(1.5);
 }
 
-/*BOUNCE ANIMATION FOR THE ARROW*/
-
-.bounce {
--moz-animation: bounce 1.5s infinite;
--webkit-animation: bounce 1.5s infinite;
-animation: bounce 1.5s infinite;
-}
-@-moz-keyframes bounce {
-0%, 20%, 50%, 80%, 100% {
--moz-transform: translateY(0);
-transform: translateY(0);
-}
-0% {
--moz-transform: translateY(-0.5rem);
-transform: translateY(-0.5rem);
-}
-100% {
--moz-transform: translateY(-0.3rem);
-transform: translateY(-0.3rem);
-}
-}
-@-webkit-keyframes bounce {
-0%, 20%, 50%, 80%, 100% {
--webkit-transform: translateY(0);
-transform: translateY(0);
-}
-40% {
--webkit-transform: translateY(-0.5rem);
-transform: translateY(-0.5rem);
-}
-60% {
--webkit-transform: translateY(-0.3rem);
-transform: translateY(-0.3rem);
-}
-}
-@keyframes bounce {
-0%, 20%, 50%, 80%, 100% {
--moz-transform: translateY(0);
--ms-transform: translateY(0);
--webkit-transform: translateY(0);
-transform: translateY(0);
-}
-40% {
--moz-transform: translateY(-0.5rem);
--ms-transform: translateY(-0.5rem);
--webkit-transform: translateY(-0.5rem);
-transform: translateY(-0.5rem);
-}
-60% {
--moz-transform: translateY(-0.3rem);
--ms-transform: translateY(-0.3rem);
--webkit-transform: translateY(-0.3rem);
-transform: translateY(-0.3rem);
-}
-}
-/*BOUNCE ANIMATION FOR THE ARROW*/
-
-#thumbnailpreview{
-  border: 0.25rem solid #ffffff;
-  background: #000000;
-  background: -webkit-linear-gradient(left bottom, #040157, #00775A); /* For Safari */
-  background: -o-linear-gradient(top right, #040157, #00775A); /* For Opera */
-  background: -moz-linear-gradient(top right, #040157, #00775A); /* For Firefox*/
-  background: linear-gradient(to top right, #040157, #00775A); /* Standard syntax */
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-  margin-bottom: 1.5rem;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-  max-width:75vw;
-  max-height:35vh;
-  margin-top: 10vmax;
+#footer {
+    padding: 0.5rem;
+    font-weight: 500;
 }
 
+@media only screen and (min-width: 525px) {
+    #nav {
+        padding: 0.25rem;
+    }
+    
+    .thumbdloadbtn {
 
-#thumbnailpreview:hover{
-  transform: scale(1.025);
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
+    }
 
-#ytlink{
-  width: auto;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 1.75vmax;
-  text-align: center;
-  padding-left: 1.5vmax;
-  padding-right: 1.5vmax;
-  padding-top: 1vmax;
-  padding-bottom: 1vmax;
-  border: none;
-  border-radius: 10vmax;
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.25);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
+    #main {
+        margin-top: 0.05rem;
+    }
 
-#ytlink:hover{
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.50);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
-
-#thumbdloadbtn{
-  font-size: 1.75vmax;
-  font-family: 'Fjalla One', sans-serif;
-  margin: 1.5vmax;
-  padding-left: 5vmax;
-  padding-right: 5vmax;
-  padding-top: 1vmax;
-  padding-bottom: 1vmax;
-  border: none;
-  border-radius: 10em;
-  color: #ffffff;
-  background: -webkit-linear-gradient(left bottom, #040157, #00775A); /* For Safari */
-  background: -o-linear-gradient(top right, #040157, #00775A); /* For Opera */
-  background: -moz-linear-gradient(top right, #040157, #00775A); /* For Firefox*/
-  background: linear-gradient(to top right, #040157, #00775A); /* Standard syntax */
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
-
-#thumbdloadbtn:hover{
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
-
-.thumbdloadbtn{
-  font-size: 1.75vmax;
-  margin: 0.5vmax;
-  padding-left: 5vmax;
-  padding-right: 5vmax;
-  padding-top: 0.75vmax;
-  padding-bottom: 0.75vmax;
-  border: none;
-  border-radius: 10rem;
-  width: 25vmax;
-  color: #ffffff;
-  background: -webkit-linear-gradient(left bottom, #040157, #00775A); /* For Safari */
-  background: -o-linear-gradient(top right, #040157, #00775A); /* For Opera */
-  background: -moz-linear-gradient(top right, #040157, #00775A); /* For Firefox*/
-  background: linear-gradient(to top right, #040157, #00775A); /* Standard syntax */
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.25);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
-
-.thumbdloadbtn:hover{
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.5);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -moz-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
-
-@media only screen and (max-width: 2130px) {
-  #download-buttons{
-    display: grid;
-  }
 }

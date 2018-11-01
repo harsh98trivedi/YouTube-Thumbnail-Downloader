@@ -31,12 +31,12 @@ a:hover {
 ::-moz-selection {
     /* Code for Firefox */
     color: #ffffff;
-    background: #040157;
+    background: #00775A;
 }
 
 ::selection {
     color: white;
-    background: #040157;
+    background: #00775A;
 }
 
 input {
@@ -90,9 +90,9 @@ input:active {
 }
 
 #header {
-    font-size: 2.5vmax;
-    white-space: nowrap;
-    font-weight: 600;
+    font-size: 5vw;
+    white-space: normal;
+    font-weight: 900;
     margin: 0 0.25rem;
 }
 
@@ -111,7 +111,7 @@ input:active {
 }
 
 #main {
-    margin: 0.5rem auto;
+    margin: 1.5rem auto;
     display: flex;
     min-height: 90vh;
     height: 100%;
@@ -121,13 +121,17 @@ input:active {
 }
 
 #thumbnailpreview {
+    display: flex;
+    margin: -5rem auto auto auto;
+    position: relative;
+    text-align: center;
+    justify-content: center;
     max-width: 75vw;
-    border: 0.25vmax solid #ffffff;
+    border: 0.25rem solid #ffffff;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     -moz-transition: all ease 1s;
     -o-transition: all ease 1s;
-    margin: -0.5rem;
 }
 
 #thumbnailpreview:hover {
@@ -187,19 +191,31 @@ input:active {
 #footer {
     padding: 0.5rem;
     font-weight: 500;
+    font-size: 2.5vw
 }
 
-@media only screen and (max-width: 525px) {
+@media only screen and (max-height: 440px) {
     #nav {
         padding: 0.25rem;
     }
-
-    .thumbdloadbtn {
-
-    }
-
     #main {
-        margin: 0.5rem 0;
+        margin: 3rem auto;
     }
 
+}
+
+@media only screen and (max-height: 380px) {
+    #header {
+        font-size: 3vw;
+    }
+    #main {
+        margin: 5rem auto;
+    }
+}
+
+
+@media only screen and (max-height: 280px) {
+    #main {
+        margin: 7rem auto;
+    }
 }

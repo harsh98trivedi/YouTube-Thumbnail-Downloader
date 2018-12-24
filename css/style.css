@@ -79,7 +79,7 @@ input:active {
 #nav {
     justify-content: center;
     text-align: justify;
-    padding: 0.5rem;
+    padding: 1rem 0;
     position: relative;
     z-index: 500;
 }
@@ -90,9 +90,9 @@ input:active {
 }
 
 #header {
-    font-size: 5vw;
+    font-size: 2.25rem;
     white-space: normal;
-    font-weight: 900;
+    font-weight: 700;
     margin: 0 0.25rem;
 }
 
@@ -157,12 +157,11 @@ input:active {
 
 #thumbdloadbtn {
     color: #ffffff;
-    border: none;
+	outline: none;
     padding: 0.75rem;
-    width: 50vw;
-    border-radius: 10rem;
-    letter-spacing: 0.25rem;
-    font-weight: 700;
+    border-radius: 15rem;
+    letter-spacing: 0.5rem;
+    font-weight: 900;
     font-size: 1.25rem;
 }
 
@@ -174,14 +173,12 @@ input:active {
     color: #ffffff;
     border: none;
     white-space: nowrap;
-    padding: 0.75rem;
-    width: 50vw;
-    margin: 0.25rem 0;
+    min-width: 50vw;
+    margin: 0.5rem 0;
     text-align: center;
     border-radius: 10rem;
     font-weight: 700;
     font-size: 1.25rem;
-    cursor: pointer;
 }
 
 .thumbdloadbtn:active {
@@ -191,7 +188,7 @@ input:active {
 #footer {
     padding: 0.5rem;
     font-weight: 500;
-    font-size: 3vw
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-height: 440px) {

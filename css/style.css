@@ -2,7 +2,7 @@ body {
     font-family: 'Dosis', sans-serif;
     background: #ffffff;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     color: #ffffff;
     background: -webkit-linear-gradient(bottom, #bababa, #ffffff);
     /* For Safari */
@@ -92,7 +92,7 @@ input:active {
 #header {
     font-size: 2rem;
     white-space: normal;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0 0.25rem;
 }
 
@@ -148,7 +148,7 @@ input:active {
     padding: 1.5rem 0;
     margin: 0.25rem;
     border-radius: 10rem;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1rem;
     width: 90vw;
     border: none;
@@ -157,11 +157,10 @@ input:active {
 
 #thumbdloadbtn {
     color: #ffffff;
-	outline: none;
     padding: 0.75rem;
     border-radius: 15rem;
     letter-spacing: 0.5rem;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 1.25rem;
 }
 
@@ -174,9 +173,10 @@ input:active {
     border: none;
     white-space: nowrap;
     min-width: 50vw;
+    padding: 0.75rem;
     margin: 0.5rem 0;
     text-align: center;
-    border-radius: 10rem;
+    border-radius: 15rem;
     font-weight: 700;
     font-size: 1.25rem;
 }
@@ -186,7 +186,7 @@ input:active {
 }
 
 #footer {
-    padding: 1rem;
+    padding: 0.5rem;
     font-weight: 500;
     font-size: 1.5rem;
 }

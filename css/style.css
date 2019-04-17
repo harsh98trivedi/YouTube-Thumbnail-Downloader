@@ -79,7 +79,7 @@ input:active {
 #nav {
     justify-content: center;
     text-align: justify;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
     position: relative;
     z-index: 500;
 }
@@ -111,9 +111,9 @@ input:active {
 }
 
 #main {
-    margin: 1.5rem auto;
+    margin: auto;
     display: flex;
-    min-height: 90vh;
+    min-height: 100vh;
     height: 100%;
     width: 100vw;
     align-items: center;

@@ -11,12 +11,15 @@
     <meta content='#ffffff' name='theme-color' />
     <meta name="google-site-verification" content="0yDUo8-uyoewyaf5iw2w1qXf2T0qL-hF4cMY2Ji9STI" />
 
-    <meta name="keywords" content="YouTube, YouTube Thumbnail Downloader, Thumbnail Downloader, Thumbnails, Download Thumbnails, Download YouTube Thumbails, YouTube Video Thumbnail Downloader, Youtube Thumbnail Downloader, YT, YT Thumbnail Downloader, Youtube Thumbnail Downloader HD, YouTube Thumbnail Downloader Online, Clean and Simple YouTube Thumbnail Downloader, CLean and Simple, YouTube Thumbnails, YouTube HD Thumbnail Downloader, High Definition Thumbnail Downoader, YT Thumbnail Research, Download YouTube Thumbnail, Download YouTube Thumbnails Easily, Harsh Trivedi">
+    <meta name="keywords"
+        content="YouTube, YouTube Thumbnail Downloader, Thumbnail Downloader, Thumbnails, Download Thumbnails, Download YouTube Thumbails, YouTube Video Thumbnail Downloader, Youtube Thumbnail Downloader, YT, YT Thumbnail Downloader, Youtube Thumbnail Downloader HD, YouTube Thumbnail Downloader Online, Clean and Simple YouTube Thumbnail Downloader, CLean and Simple, YouTube Thumbnails, YouTube HD Thumbnail Downloader, High Definition Thumbnail Downoader, YT Thumbnail Research, Download YouTube Thumbnail, Download YouTube Thumbnails Easily, Harsh Trivedi">
 
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta property="og:title" content="YouTube Thumbnail Downloader" />
-    <meta property="og:description" content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you." />
-    <meta property="og:image" content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg" />
+    <meta property="og:description"
+        content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you." />
+    <meta property="og:image"
+        content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg" />
     <meta property="og:url" content="https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader/" />
     <meta property="og:site_name" content="YouTube Thumbnail Downloader" />
     <meta property="og:locale" content="en_US" />
@@ -25,19 +28,25 @@
     <meta content='https://www.facebook.com/TheHarshTrivedi' property='article:author' />
     <meta property="og:url" content="https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader/" />
     <!-- Search Engine -->
-    <meta property="description" content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you." />
-    <meta property="image" content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg" />
+    <meta property="description"
+        content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you." />
+    <meta property="image"
+        content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg" />
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="YouTube Thumbnail Downloader" />
-    <meta itemprop="description" content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you." />
-    <meta itemprop="image" content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg" />
+    <meta itemprop="description"
+        content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you." />
+    <meta itemprop="image"
+        content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="YouTube Thumbnail Downloader" />
-    <meta property="twitter:description" content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you." />
+    <meta property="twitter:description"
+        content="Download YouTube video thumbnails with ease. Free, Clean & Simple YouTube Thumbnail Downloader for you." />
     <meta property="twitter:creator" content="@harsh98trivedi" />
     <meta property="twitter:creator:id" content="@harsh98trivedi" />
-    <meta property="twitter:image:src" content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg" />
+    <meta property="twitter:image:src"
+        content="https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg" />
     <meta property="twitter:image" content="YouTube Thumbnail Downloader | Download YouTube thumbnails with ease." />
 
     <link rel='icon' type='image/x-icon' href='images/favicon.png' />
@@ -62,23 +71,29 @@
 
 <body>
     <nav class="navbar container-fluid site-gradient text-center" id="nav">
-        <a  style="outline:none;" id="header-links" href="https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader/">
+        <a style="outline:none;" id="header-links"
+            href="https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader/">
             <h1 id="header">YOUTUBE THUMBNAIL DOWNLOADER</h1>
         </a>
     </nav>
+    
+    <br>
 
     <div class="container text-center" id="main">
         <div id="result" class="hidden">
             <!-- THUMBNAIL PREVIEW -->
-            <img class="shadow" id="thumbnailpreview" src="images/placeholder.gif" onerror="this.style.display='none'" />
+            <img class="shadow" id="thumbnailpreview" src="images/placeholder.gif"
+                onerror="this.style.display='none'" />
             <!-- THUMBNAIL PREVIEW -->
             <hr style="width:50vw;">
             <!-- INPUT AREA -->
             <div class="input-group">
-                <input id="ytlink" autofocus type="text" class="form-control shadow" placeholder="ENTER A YOUTUBE VIDEO URL HERE"
-                    spellcheck="false" onsubmit="youtube_thumbnail_downloader(ytlink.value);ShowMain()" autocomplete="off"/>
+                <input id="ytlink" autofocus type="text" class="form-control shadow"
+                    placeholder="ENTER A YOUTUBE VIDEO URL HERE" spellcheck="false"
+                    onsubmit="youtube_thumbnail_downloader(ytlink.value);ShowMain()" autocomplete="off" />
             </div>
-            <button id="thumbdloadbtn" class="thumbdloadbtn site-gradient" type="button" onclick="youtube_thumbnail_downloader(ytlink.value);ShowMain()">FETCH</button>
+            <button id="thumbdloadbtn" class="thumbdloadbtn site-gradient" type="button"
+                onclick="youtube_thumbnail_downloader(ytlink.value);ShowMain()">FETCH</button>
             <!-- INPUT AREA -->
 
             <!-- Download Buttons -->
@@ -91,6 +106,9 @@
                 <br>
                 <a target="_blank" id="thumbnaillq" download><button class="thumbdloadbtn site-gradient shadow">LOW
                         QUALITY</button></a>
+                <br>
+                <a onclick="location.reload();"><button
+                        class="thumbdloadbtn site-gradient shadow">RELOAD</button></a>
             </div>
             <!-- Download Buttons -->
         </div>
@@ -108,9 +126,6 @@
             <a href="https://www.youtube.com/harsh98trivedi" target="_blank" id="social-media-icons">
                 <img id="social" src="images/svg/youtube.svg" alt="YouTube"></img>
             </a>
-            <a href="https://plus.google.com/+harsh98trivedi" target="_blank" id="social-media-icons">
-                <img id="social" src="images/svg/googleplus.svg" alt="Google+"></img>
-            </a>
             <a href="https://www.instagram.com/harsh98trivedi" target="_blank" id="social-media-icons">
                 <img id="social" src="images/svg/instagram.svg" alt="Instagram"></img>
             </a>
@@ -126,7 +141,8 @@
             <!-- Social Media Icons -->
         </div>
         <hr style="background: #ffffff; width: 50vw; opacity: 0.25;">
-        <p style="display: inline;">Made with <img style="margin-bottom: 0.15rem;" src="images/heart.png"> by <a target="_blank" href="https://harsh98trivedi.github.io">Harsh Trivedi</a></p>
+        <p style="display: inline;">Made with <img style="margin-bottom: 0.15rem;" src="images/heart.png"> by <a
+                target="_blank" href="https://harsh98trivedi.github.io">Harsh Trivedi</a></p>
     </footer>
 
     <script src="js/jquery3.3.1.min.js"></script>

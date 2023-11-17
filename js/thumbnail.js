@@ -4,7 +4,7 @@ function youtube_thumbnail_downloader(url) {
     if (match && match[1].length == 11) {
         vidurl = match[1];
         thumbnailpreview = 'http://img.youtube.com/vi/'+vidurl+'/mqdefault.jpg';
-        thumbnailhq = 'http://img.youtube.com/vi/'+vidurl+'/maxresdefault.jpg';
+        thumbnailhq = 'http://img.youtube.com/vi/'+vidurl+'/sddefault.jpg';
         thumbnailmq = 'http://img.youtube.com/vi/'+vidurl+'/hqdefault.jpg';
         thumbnaillq = 'http://img.youtube.com/vi/'+vidurl+'/mqdefault.jpg';
     } else {

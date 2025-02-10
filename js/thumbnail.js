@@ -12,7 +12,7 @@ function youtube_thumbnail_downloader(url) {
 		location.reload();
     }
     document.getElementById('thumbnailpreview').src = thumbnailpreview;
-    document.getElementById('maxresdefault').href = thumbnailhq;
+    document.getElementById('thumbnailhq').href = thumbnailhq;
     document.getElementById('thumbnailmq').href = thumbnailmq;
     document.getElementById('thumbnaillq').href = thumbnaillq;
 }

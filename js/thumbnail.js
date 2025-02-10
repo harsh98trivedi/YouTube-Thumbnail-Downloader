@@ -4,7 +4,7 @@ function youtube_thumbnail_downloader(url) {
     if (match && match[1].length == 11) {
         vidurl = match[1];
         thumbnailpreview = 'http://img.youtube.com/vi/'+vidurl+'/mqdefault.jpg';
-        thumbnailhq = 'http://img.youtube.com/vi/'+vidurl+'/sddefault.jpg';
+        thumbnailhq = 'http://img.youtube.com/vi/'+vidurl+'/maxresdefault.jpg';
         thumbnailmq = 'http://img.youtube.com/vi/'+vidurl+'/hqdefault.jpg';
         thumbnaillq = 'http://img.youtube.com/vi/'+vidurl+'/mqdefault.jpg';
     } else {
@@ -12,7 +12,7 @@ function youtube_thumbnail_downloader(url) {
 		location.reload();
     }
     document.getElementById('thumbnailpreview').src = thumbnailpreview;
-    document.getElementById('thumbnailhq').href = thumbnailhq;
+    document.getElementById('maxresdefault').href = thumbnailhq;
     document.getElementById('thumbnailmq').href = thumbnailmq;
     document.getElementById('thumbnaillq').href = thumbnaillq;
 }

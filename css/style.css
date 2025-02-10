@@ -216,3 +216,8 @@ input:active {
         margin: 7rem auto;
     }
 }
+
+
+.input-group{
+    max-width: 75vmax;
+}

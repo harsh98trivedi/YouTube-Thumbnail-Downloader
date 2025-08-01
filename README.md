@@ -7,7 +7,7 @@ Originally hosted on [Firebase](https://yt-thumbnail-downloader.firebaseapp.com)
 
 ---
 
-![YouTube Thumbnail Downloader](meta.jpg)
+[![YouTube Thumbnail Downloader](meta.jpg)](https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader)
 
 ---
 

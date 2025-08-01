@@ -1,20 +1,43 @@
-# [YouTube Thumbnail Downloader](https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader) :fire:
+# [YouTube Thumbnail Downloader](https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader) 🔥
 
-Free, Clean & Simple **YouTube Thumbnail Downloader** for you. :slightly_smiling_face: <br>
-Download **YouTube video thumbnails** with ease.<br>
-This project was initially hosted on [**Firebase**](https://yt-thumbnail-downloader.firebaseapp.com), but then I thought of uploading it to **GitHub**. :rocket:
+A free, clean, and simple **YouTube Thumbnail Downloader** for everyone 🙂  
+Easily download **YouTube video thumbnails** with just a few clicks.
 
----
-
-![YouTube Thumbnail Downloader](https://raw.github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/master/images/meta.jpg)
-
-#### Libraries Used
+Originally hosted on [Firebase](https://yt-thumbnail-downloader.firebaseapp.com), now proudly hosted on **GitHub Pages** 🚀
 
 ---
 
-* Bootstrap - http://getbootstrap.com/
-* jQuery - http://jquery.com/
+![YouTube Thumbnail Downloader](meta.jpg)
 
-> License: [GNU General Public License v3.0](https://github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/blob/master/LICENSE.md)
+---
 
-![YouTube Thumbnail Downloader](https://img.shields.io/badge/YouTube-Thumbnail%20Downloader-green.svg)
+## Features
+
+- Download high, medium, and low-quality YouTube video thumbnails
+- Modern, responsive UI built with **Tailwind CSS**
+- No dependencies on heavy frameworks like Bootstrap or jQuery
+- Lightweight and fast — just HTML, vanilla JavaScript, and Tailwind
+- Open source, easy to customize
+
+---
+
+## Libraries & Tools Used
+
+- **[Tailwind CSS](https://tailwindcss.com/)** for modern styling and layout
+- **[Fontawesome](https://fontawesome.com/)** for icons.
+
+---
+
+## License
+
+This project is licensed under the [GNU General Public License v3.0](https://github.com/harsh98trivedi/YouTube-Thumbnail-Downloader/blob/master/LICENSE.md).
+
+---
+
+## Live Demo
+
+Check it out here: [YouTube Thumbnail Downloader](https://harsh98trivedi.github.io/YouTube-Thumbnail-Downloader)
+
+Feel free to fork, contribute, or suggest improvements!
+
+![YouTube Thumbnail Downloader](https://img.shields.io/badge/YouTube-Thumbnail%20Downloader-red.svg)
